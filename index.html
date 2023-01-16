@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo de treino</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/mobile.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <script src="codigo.js"></script>
+</head>
+<body>
+
+    <main>
+        <section id="login">
+    
+            <div id="formulario">
+                <h1>Seja bem-vindo</h1>
+                <p>Vamos calcular seu tempo de treino.</p>
+                <form action="script.js" method="get">
+                    <div class="campo">
+                        <label for="exc">Numero de exercício: </label>
+                        <input type="number" name="exc" id="exc" placeholder="Numero de exercício" minlength="1" maxlength="4" required>
+                    </div>
+                    <br>
+                    <div class="campo">
+                        <label for="pula">Descanso entre series: </label>
+                        <input type="number" name="pula" id="pula" placeholder="Descanso entre series" minlength="1" maxlength="4" required>
+                    </div>
+
+                    <input type="button" value="Calcular" onclick="gerar()"></p>
+                </form>
+                <br>
+                <div id="res">
+                    Preencha os dados acima para ver o resultado!
+                </div>
+                <br>
+                <div id="res2">
+                    
+                </div>
+                <br>
+                <div id="res3">
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
